@@ -12,21 +12,27 @@ const Title = styled.h1`
 `;
 
 function HomePage() {
+  const onButtonClick = () => {
+    // using Java Script method to get PDF file
+    fetch('../assets/files/img1.png').then(response => {
+      response.blob().then(blob => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+        // Setting various property values
+        let alink = document.createElement('a');
+        alink.href = fileURL;
+        alink.download = '../assets/files/img1.png';
+        alink.click();
+      })
+    })
+  }
   const handleDownload = () => {
-    const fileUrl = "../assets/img/Benitha_Louange_IYUYISENGA.pdf"; // Replace with the actual file URL
-    const fileName = "../assets/img/Benitha_Louange_IYUYISENGA.pdf"; // Replace with the desired file name
-
-    const anchor = document.createElement("a");
-    anchor.href = fileUrl;
-    anchor.download = fileName;
-    anchor.style.display = "none";
-
-    document.body.appendChild(anchor);
-
-    anchor.click();
-
-    document.body.removeChild(anchor);
-  };
+    const pdfUrl = process.env.PUBLIC_URL + 'Benitha_Louange_IYUYISENGA.pdf';
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'Benitha_Louange_IYUYISENGA.pdf';
+    link.click();
+  }
   return (
     <div className="App">
       <Header />
