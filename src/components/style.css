@@ -1,0 +1,634 @@
+/* Color of the links BEFORE scroll */
+/* .navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler .fa-bars {
+  color: #fff;
+} */
+
+/* Color of the links AFTER scroll */
+/* .navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler .fa-bars {
+  color: #4f4f4f;
+} */
+
+/* Color of the navbar AFTER scroll */
+/* .navbar-scrolled {
+  background-color: #fff;
+} */
+
+/* An optional height of the navbar AFTER scroll */
+/* .navbar.navbar-scroll.navbar-scrolled {
+  padding-top: 5px;
+  padding-bottom: 5px;
+} */
+/* * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+} */
+
+.App {
+  font-family: 'Poppins';
+}
+
+.nav-icon-line {
+  background-color: black !important;
+}
+
+.menu-item-button {
+  color: white !important;
+}
+
+/* .container .left{
+  background-color: white;
+  height: 100%;
+  width: 60%;
+}
+.container .right{
+  background-color: #FFFFFF;
+  height: 100%;
+  width: 40%;
+} */
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  /* height: 100% !important; */
+  /* height: 40rem; */
+  width: fit-content;
+}
+
+.flex-container>div {
+  background-color: #FFFFFF;
+  width: 100%;
+  text-align: center;
+  /* line-height: 75px; */
+  /* Uncomment this if you want to use line-height */
+  flex: 1;
+  font-size: 30px;
+  justify-content: center;
+  padding-top: 10rem;
+}
+
+.right {
+  margin-left: 10rem !important;
+  background-color: #87CEFA !important;
+  /* Avoid using !important */
+  flex: 0 0 30%;
+}
+
+.floating-image {
+  position: absolute;
+  top: 52%;
+  /* Adjust the top position as needed */
+  left: 68%;
+  /* Adjust the left position as needed */
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  /* Place the image above the divs */
+  width: fit-content;
+  height: 100%;
+}
+
+
+.he1 {
+  /* Louange IYUYISENGA */
+
+  /* position: absolute;
+width: 700px;
+height: 40px;
+left: 45px;
+top: 240px; */
+
+  width: 700px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 70px;
+  /* identical to box height, or 57% */
+  /* text-align: center; */
+
+  color: #000000;
+
+
+}
+
+/* Transforming concepts into code-driven realities as a dedicated software developer. */
+.he2 {
+  /* position: absolute; */
+  /* width: 650px;
+height: 87px;
+left: 67px;
+top: 350px; */
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  /* line-height: 40px; */
+  /* or 114% */
+  text-align: center;
+
+  color: #000000;
+}
+
+.in-text {
+  color: #337eb4;
+}
+
+.he3 {
+  text-transform: capitalize;
+  padding-top: 1rem;
+  font-size: 10px;
+}
+
+.btn {
+  margin: 2rem;
+  width: 140px;
+  height: 50px;
+  background: linear-gradient(to top, #337eb4, #387daf, #3e8fc8);
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn span {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: top 0.5s;
+}
+
+.btn-text-one {
+  position: absolute;
+  color: white;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.btn-text-two {
+  position: absolute;
+  width: 100%;
+  top: 150%;
+  left: 0;
+  color: white;
+  transform: translateY(-50%);
+}
+
+.btn:hover .btn-text-one {
+  top: -100%;
+}
+
+.btn:hover .btn-text-two {
+  top: 50%;
+}
+
+.button {
+  --main-focus: #2d8cf0;
+  --font-color: #323232;
+  --bg-color-sub: #ffffff;
+  --bg-color: #ffffff;
+  --main-color: #387daf;
+  margin: 2rem;
+  width: 170px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.button,
+.button__icon,
+.button__text {
+  transition: all 0.3s;
+}
+
+.button .button__text {
+  transform: translateX(22px);
+  color: var(--font-color);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.button .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: var(--bg-color-sub);
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+.button .svg {
+  width: 20px;
+  fill: var(--main-color);
+}
+
+/* 
+.button:hover {
+  background: var(--bg-color);
+} */
+
+/* .button:hover .button__text {
+  color: transparent;
+  font-size: 12px !important;
+} */
+
+.logo {
+  font-size: 38px !important;
+  border: 5px solid #337eb4;
+  font-weight: 900;
+  padding: 4px;
+}
+
+.buttons {
+  margin-left: 5rem;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 769px) {
+  .box1 {
+    display: none;
+  }
+
+  .card_text {
+    margin-top: 0rem;
+    font-weight: 500;
+  }
+
+  .floating-image {
+    display: none;
+  }
+
+  .he1 {
+    width: 100%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 70px;
+  }
+
+  .buttons {
+    margin-left: 3rem;
+    margin-top: 3rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column !important;
+    flex-wrap: wrap;
+  }
+}
+
+/* About */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: 2rem;
+}
+
+/* .card {
+  display: flex;
+  width: 100%;
+  height: 254px;
+  border-radius: 30px;
+  background: #e0e0e0;
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+  border: 4px solid white;
+  max-width: 100%; 
+} */
+
+
+.card {
+  position: absolute;
+  width: 100% !important;
+  margin-top: 3rem;
+  height: 400px !important;
+  border-radius: 30px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+  ;
+  border: none;
+  display: flex;
+  flex-direction: row !important;
+}
+
+.box1 {
+  /* position: relative; */
+  width: 300px;
+  border: 5px solid #387daf;
+  height: 300px;
+  margin-top: 1rem;
+  left: 4rem;
+  margin-left: 4rem;
+  background-color: #387daf;
+  z-index: 0;
+}
+
+.box2 {
+  margin-top: 2rem;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 5px solid #387daf;
+  right: 2rem;
+}
+
+.floating-image2 {
+  position: absolute;
+  top: 40%;
+  /* Adjust the top position as needed */
+  /* left: 10%; */
+  /* Adjust the left position as needed */
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  /* Place the image above the divs */
+  width: fit-content;
+  height: 100%;
+}
+
+.card__text {
+  width: 500px;
+  margin-left: 5rem;
+  font-family: 'Poppins';
+}
+
+.card__text1 {
+  text-transform: capitalize;
+  font-weight: bold;
+  padding-bottom: 1rem;
+  line-height: 20px;
+}
+
+.card__text2 {
+  text-transform: capitalize;
+  padding-top: 1rem;
+  line-height: 20px;
+}
+
+/* skills */
+
+.checked {
+  color: #3e8fc8;
+}
+
+.card {
+  width: 300px;
+  background-color: #fff;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);s */
+  border-radius: 10px;
+  /* overflow: hidden; */
+  display: flex !important;
+  flex-direction: column !important;
+  flex-wrap: wrap;
+}
+
+.card1 {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.64);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.header {
+  /* background-color: #3e8fc8; */
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+  color: #387daf;
+  font-weight: 900;
+  font-family: 'Poppins';
+}
+
+.body {
+  padding: 20px;
+}
+
+.skill {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.skill-name {
+  width: 120px;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.skill-level {
+  width: 250px;
+  height: 10px;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+.skill-percent {
+  background-color: #3e8fc8;
+  height: 100%;
+}
+
+.skill-percent-number {
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.card-body {
+  /* background: #87CEFA; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5rem;
+
+}
+
+.card11 {
+  width: 350px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.79);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.card12 {
+  width: 350px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.79);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.card13 {
+  width: 350px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.79);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.card-wrapper1 {
+  display: flex;
+  gap: 5rem;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  padding: 2rem;
+}
+
+.card_text {
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.cardicon {
+  margin-top: 2rem;
+  width: 50px;
+}
+
+/* contact  */
+.singup {
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  font-weight: bold;
+  font-size: x-large;
+  margin-top: 1.5em;
+}
+
+.card90 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+  width: 60%;
+  flex-direction: column;
+  gap: 35px;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 16px 16px 32px #c8c8c8,
+    -16px -16px 32px #fefefe;
+  border-radius: 8px;
+}
+
+.inputBox,
+.inputBox1 {
+  position: relative;
+  width: 500px;
+}
+
+.inputBox input,
+.inputBox1 input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  color: #000;
+  font-size: 1em;
+  background: transparent;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  transition: 0.1s;
+  border-bottom-left-radius: 8px;
+}
+
+.inputBox span,
+.inputBox1 span {
+  margin-top: 5px;
+  position: absolute;
+  left: 0;
+  transform: translateY(-4px);
+  margin-left: 10px;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 12px;
+  color: #000;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 3px;
+  border-radius: 8px;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+  transform: translateX(200px) translateY(-15px);
+  font-size: 0.8em;
+  padding: 5px 10px;
+  background: #000;
+  letter-spacing: 0.2em;
+  color: #fff;
+  border: 2px;
+}
+
+.inputBox1 input:valid~span,
+.inputBox1 input:focus~span {
+  transform: translateX(200px) translateY(-15px);
+  font-size: 0.8em;
+  padding: 5px 10px;
+  background: #000;
+  letter-spacing: 0.2em;
+  color: #fff;
+  border: 2px;
+}
+
+.inputBox input:valid,
+.inputBox input:focus,
+.inputBox1 input:valid,
+.inputBox1 input:focus {
+  border: 2px solid #000;
+  border-radius: 8px;
+}
+
+.enter {
+  height: 45px;
+  width: 200px;
+  border-radius: 5px;
+  border: 2px solid #000;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 0.5s;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-bottom: 3em;
+}
+
+.enter:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
