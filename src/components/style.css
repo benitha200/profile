@@ -263,10 +263,32 @@ top: 350px; */
   .box1 {
     display: none;
   }
+  .inputBox,
+.inputBox1 {
+  position: relative;
+  width: fit-content !important;
+}
 
-  .card_text {
-    margin-top: 0rem;
-    font-weight: 500;
+  .card-body {
+    /* background: #87CEFA; */
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    gap: 5rem;
+  
+  }
+
+  
+  .card__text {
+    margin-top: 1rem;
+    position: relative !important;
+    width: calc(100% - 18px) !important;
+    margin-left: 1rem !important;
+    font-family: 'Poppins';
+    text-align: start;
+  }
+  .card__text1{
+    color: #387daf;
   }
 
   .floating-image {
@@ -366,9 +388,11 @@ top: 350px; */
 }
 
 .card__text {
+  margin-top: 1rem;
   width: 500px;
   margin-left: 5rem;
   font-family: 'Poppins';
+  text-align: start;
 }
 
 .card__text1 {
@@ -376,12 +400,14 @@ top: 350px; */
   font-weight: bold;
   padding-bottom: 1rem;
   line-height: 20px;
+  font-size: 24px;
+  margin-top: 5px;
 }
 
 .card__text2 {
   text-transform: capitalize;
   padding-top: 1rem;
-  line-height: 20px;
+  line-height: 26pt;
 }
 
 /* skills */
@@ -500,7 +526,8 @@ top: 350px; */
 .card-wrapper1 {
   display: flex;
   gap: 5rem;
-  /* From https://css.glass */
+  flex-wrap: wrap;
+  /* flex-shrink: 1; */
   background: rgba(255, 255, 255, 0.6);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -508,6 +535,7 @@ top: 350px; */
   -webkit-backdrop-filter: blur(10.5px);
   border: 1px solid rgba(255, 255, 255, 0.13);
   padding: 2rem;
+  justify-self: center;
 }
 
 .card_text {
@@ -631,4 +659,98 @@ top: 350px; */
 .enter:hover {
   background-color: rgb(0, 0, 0);
   color: white;
+}
+.card80 {
+  width: 40%;
+  height: fit-content;
+  background: #313131;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: 0.2s ease-in-out;
+  border-radius: 10px;
+}
+
+.img {
+  height: 100%;
+  width:90%;
+  /* position: absolute; */
+  transition: 0.2s ease-in-out;
+  padding-top: 2rem;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.textBox {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  transition: 0.2s ease-in-out;
+  z-index: 2;
+}
+
+.textBox > .text {
+  font-weight: bold;
+}
+
+.textBox > .head {
+  font-size: 20px;
+}
+
+.textBox > .price {
+  font-size: 17px;
+}
+
+.textBox > span {
+  font-size: 12px;
+  color: lightgrey;
+}
+
+.card80:hover > .textBox {
+  opacity: 1;
+}
+
+.card80:hover > .img {
+  height: 50%;
+  filter: blur(7px);
+  animation: anim 3s infinite;
+}
+
+@keyframes anim {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* .card80:hover {
+  transform: scale(1.04) rotate(-1deg);
+} */
+.card__wrapper{
+  display: flex;
+  gap: 5rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* flex-shrink: 1; */
+  background: rgba(35, 148, 204, 0.6);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35, 148, 204, 0.565);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  padding: 2rem;
+  justify-self: center;
 }

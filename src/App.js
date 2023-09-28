@@ -8,6 +8,8 @@ import Header from './components/Header';
 import Skills from './components/Skills';
 import Services from './components/Services';
 import Contact from './components/Contact';
+import Project from './components/Project';
+
 
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
       <Skills/>
       <Services/>
       <Contact/>
+      <Project/>
       <Routes>
         <Route path="/" exact component={HomePage} />
         <Route path="/about" component={About} />
